@@ -11,7 +11,7 @@ html {
 }
 	
 h1 {
-		font-size: 50px;
+	font-size: 50px;
 }
 
 h2 {
@@ -52,11 +52,6 @@ div.separator {
 	margin-right: 50px;
 }
 
-div.section {
-	padding-left: 50px;
-	padding-right: 50px;
-}
-
 div.section100 {
 	min-height: 100vh;
 }
@@ -69,8 +64,8 @@ div.footer {
 div.video {
 	padding: 25px;
 	border: 2px solid #bfbfbf;
-	width: auto;
-	margin: 0 auto;
+	width: 610px;
+	margin: 50px auto;
 	border-radius: 1em;
 	background: url("bgimage2.png") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; o-background-size: cover; background-size: cover;
 	-webkit-transition-duration: 0.4s; /* Safari */
@@ -195,5 +190,9 @@ img.logo-big {
 	
 	div.section100 {
 		text-align: center;
+	}
+	
+	div.video {
+		width: initial;
 	}
 }
