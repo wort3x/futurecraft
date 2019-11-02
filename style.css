@@ -9,6 +9,10 @@ html {
 	background: url("bgimage.png") no-repeat center center fixed; webkit-background-size: cover; moz-background-size: cover; o-background-size: cover; background-size: cover;
 	scroll-behavior: smooth;
 }
+
+body.techlaunch {
+	overflow: hidden;
+}
 	
 h1 {
 	font-size: 50px;
@@ -183,6 +187,14 @@ img.logo-big {
 	height: 250px
 }
 
+iframe.techlaunch {
+	height: 75vh;
+	width: 100%;
+	border: 2px solid #bfbfbf;
+	border-radius: 1em;
+	max-width: 1080px;
+}
+
 @media (max-width: 700px) {
 	iframe.youtube {
 		display: none;
@@ -195,4 +207,10 @@ img.logo-big {
 	div.video {
 		width: initial;
 	}
+	
+	iframe.techlaunch {
+	height: 75vh;
+	width: 100%;
+	}
 }
+
