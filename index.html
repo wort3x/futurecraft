@@ -1,66 +1,45 @@
 <!doctype html>
 <html>
-	<head>
-		<title>FutureCraft od WORT3X</title>
-		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="shortcut icon" href="ico.ico" type="image/x-icon">
-	</head>
-	<body>
-	<button class="up" onclick="topFunction()" id="btnUp" title="Jít nahoru" href="#">↑</button>
-	<script>
-//Get the button
-var mybutton = document.getElementById("btnUp");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-		</script>
-
-		<div class="outer">
-  <div class="middle">
-    <div class="inner">
-			<img src="logo.png" class="logo-big" />
-			<h3>série videí od <a class="channel" href="https://www.youtube.com/channel/UCUbtEQ2Gekc2VooDBEpg-aA">WORT3X</a></h3>
-			<br/>
-			<a class="button" href="#videa">Videa</a> | <a class="button" href="#modpack">Modpack</a>
-    </div>
-  </div>
-</div>
-		<div class="100vh"/>
-		<div class="separator" />
-		<div class="section100" id="videa">
-			<h1>Videa</h1>
-			<div class="video">
-				<iframe class="youtube" width="560" height="315" src="https://youtube.com/embed/FQ1mea5MMc4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<h2>FutureCraft #1</h2>
-				<a class="youtube" href="https://youtu.be/FQ1mea5MMc4">Sledovat na YouTube</a>
-			</div>
-			<div class="video">
-				<iframe class="youtube" width="560" height="315" src="https://youtube.com/embed/fAdBPrPimfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<h2>FutureCraft #2</h2>
-				<a class="youtube" href="https://youtu.be/fAdBPrPimfU">Sledovat na YouTube</a>
-			</div>
-		<br/>
-		</div>
-		<div class="separator" />
-		<div class="section100" id="modpack">
-			<h1>Modpack</h1>
-			<br/>
-			<h2>Použitý modpack je dostupný ke stažení v <a href="https://www.technicpack.net/modpack/gejmrs-futurecraft-updated.680660">Technic Launcheru</a></h2>
-		</div>
-	</body>
+   <head>
+      <title>FutureCraft od WORT3X</title>
+      <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+      <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
+   </head>
+   <body>
+      <button class="up" onclick="topFunction()" id="btnUp" title="Jít nahoru" href="#">↑</button>
+      <script src="scroll.js"></script>
+      <div class="outer">
+         <div class="middle">
+            <div class="inner">
+               <img src="logo.png" class="logo-big" />
+               <h3>série videí od <a class="channel" href="https://www.youtube.com/channel/UCUbtEQ2Gekc2VooDBEpg-aA">WORT3X</a></h3>
+               <br/>
+               <a class="button" href="#videa">Videa</a> | <a class="button" href="#modpack">Modpack</a>
+            </div>
+         </div>
+      </div>
+      <div class="100vh"/>
+      <div class="separator" />
+      <div class="section100" id="videa">
+         <h1>Videa</h1>
+         <div class="video">
+            <iframe class="youtube" width="560" height="315" src="https://youtube.com/embed/FQ1mea5MMc4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>FutureCraft #1</h2>
+            <a class="youtube" href="https://youtu.be/FQ1mea5MMc4">Sledovat na YouTube</a>
+         </div>
+         <div class="video">
+            <iframe class="youtube" width="560" height="315" src="https://youtube.com/embed/fAdBPrPimfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>FutureCraft #2</h2>
+            <a class="youtube" href="https://youtu.be/fAdBPrPimfU">Sledovat na YouTube</a>
+         </div>
+         <br/>
+      </div>
+      <div class="separator" />
+      <div class="section100" id="modpack">
+         <h1>Modpack</h1>
+         <br/>
+         <h2>Použitý modpack je dostupný ke stažení v <a href="https://www.technicpack.net/modpack/gejmrs-futurecraft-updated.680660">Technic Launcheru</a></h2>
+      </div>
+   </body>
 </html>
