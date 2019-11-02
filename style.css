@@ -63,16 +63,22 @@ div.section100 {
 
 div.footer {
 	width: 100%;
-	height: 50vh;
+	padding-top: 250px;
 }
 
 div.video {
 	padding: 25px;
 	border: 2px solid #bfbfbf;
-	width: 610px;
+	width: auto;
 	margin: 0 auto;
 	border-radius: 1em;
-	background: url("bgimage2.png") no-repeat center center fixed; webkit-background-size: cover; moz-background-size: cover; o-background-size: cover; background-size: cover;
+	background: url("bgimage2.png") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; o-background-size: cover; background-size: cover;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+div.video:hover {
+	border: 2px solid white;
 }
 
 a.youtube {
@@ -92,6 +98,12 @@ a {
 iframe.youtube {
 	border: 2px solid #bfbfbf;
 	border-radius: 1em;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+iframe.youtube:hover {
+	border: 2px solid white;
 }
 
 button.up {
@@ -119,18 +131,69 @@ button.up:hover {
 }
 
 a.button {
-	border: none; /* Remove borders */
-	outline: none; /* Remove outline */
-	background-color: dodgerblue; /* Set a background color */
-	color: white; /* Text color */
-	cursor: pointer; /* Add a mouse pointer on hover */
-	padding: 15px; /* Some padding */
-	border-radius: 10px; /* Rounded corners */
-	-webkit-transition-duration: 0.4s; /* Safari */
+	border: none;
+	outline: none;
+	background-color: dodgerblue;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 	font-family: poppins;
 }
 
 a.button:hover {
-	background-color: royalblue; /* Add a dark-grey background on hover */
+	background-color: royalblue;
+}
+
+div.search {
+	margin: 0 auto;
+	height: 39px;
+	width: 500px;
+	border: 2px solid #bfbfbf;
+	border-radius: 1em;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+div.search:hover {
+	border: 2px solid white;
+}
+
+div.search iframe {
+	border: none;
+	height: 39px;
+	width: 500px;
+	border-radius: 1em;
+}
+
+.outer {
+  display: table;
+  height: 100vh;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.logo-big {
+	height: 250px
+}
+
+@media (max-width: 700px) {
+	iframe.youtube {
+		display: none;
+	}
+	
+	div.section100 {
+		text-align: center;
+	}
 }
